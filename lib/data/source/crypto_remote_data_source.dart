@@ -3,7 +3,7 @@ import 'package:coin_cap/data/source/models/crypto_currency_model.dart';
 
 abstract class CryptoRemoteDataSource {
   Future<List<CryptoCurrencyModel>> getTopCryptocurrencies({
-    int limit = 20,
+    int limit = 15,
     int offset = 0,
   });
 }
@@ -15,7 +15,7 @@ class CryptoRemoteDataSourceImpl implements CryptoRemoteDataSource {
 
   @override
   Future<List<CryptoCurrencyModel>> getTopCryptocurrencies({
-    int limit = 20,
+    int limit = 15,
     int offset = 0,
   }) async {
     try {

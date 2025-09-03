@@ -10,7 +10,7 @@ class CryptoGateway implements CryptoRepository {
 
   @override
   Future<List<CryptoCurrency>> getTopCryptocurrencies({
-    int limit = 20,
+    int limit = 15,
     int offset = 0,
   }) async {
     final models = await remoteDataSource.getTopCryptocurrencies(
